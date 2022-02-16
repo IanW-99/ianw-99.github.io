@@ -1,13 +1,111 @@
 ﻿<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title> Personal Homepage </title>
-    </head>
-    <body>
-        <h1> Ian Washburn </h1>
-        <p>
-            <a href="assigment0.html"> assignment 0</a>
-        </p>
-    </body>
- </html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="device-width" initial-scale="1">
+    <title> Ian Washburn </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/e27129c6ef.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        @media only screen and (max-width: 1080px)
+        {
+            small {display: none;}
+            iframe {max-width: 100%}
+
+        }
+
+        #background-image {
+            position: fixed;
+            right: 0;
+            top: 0;
+            min-width: 100%;
+            max-width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        #picture {
+            position: relative;
+            top: 20%;
+            right: 50%;
+            max-width: 100%;
+            height: auto;
+            z-index: 1;
+        }
+
+        #right-panel {
+            position: relative;
+            top: 20%;
+            left: 50%;
+            font-family: Arial, serif;
+            color: white;
+            font-size: 20pt;
+            z-index: 1;
+        }
+
+        #about-me {
+            font-family: Arial, serif;
+            font-size: 16pt;
+            color: white;
+        }
+
+        white-text {
+            color: white;
+            size: 14pt;
+            font-family: Arial,serif;
+        }
+
+        h1 {
+            font-size: 36pt;
+            color: darkgrey;
+            font-family: "Century Schoolbook",serif;
+            top: 20%;
+
+        }
+
+        h2 {
+            font-size: 48pt;
+            color: white;
+            font-family: Arial,serif;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="text-center"> Ian Washburn </h2>
+    </header>
+    <main class="container">
+        <div class="row">
+            <img id="background-image" src="media/dark-website-background.jpg" alt="picture of myself">
+            <div class="col-lg-3">
+                <small>
+                    <img id="picture" src="media/self.PNG" alt="picture of myself">
+                </small>
+            </div>
+
+            <div class="col-lg-6" >
+                <white-text>
+                    <h1 class="text-center"> About Me</h1>
+                    <p id="about-me"> <br> Hi, I'm Ian! I am Computer Science and Mathematics student at Bridgewater State University.
+                    I am in my last semester of school and looking to start my career in Software Engineering. <br></p>
+                </white-text>
+            </div>
+
+            <div class="col-lg-3">
+                <p id="right-panel"><a href="media/Ian_Washburn_Resume.pdf">Resume </a><i class="fas fa-file-alt"></i>
+                    <br><a href="https://github.com/ianw-99"> Github </a><i class="fab fa-github"></i> <br>
+                    <a href="https://www.linkedin.com/in/ian-washburn-8a3203187/"> LinkedIn</a>
+                    <i class="fas fa-project-diagram"></i> <br>
+                    Contact Info <i class="fas fa-phone-square-alt"></i> <br> iwashburn99@gmail.com <br>
+                    iwashburn@student.bridgew.edu <br> 508-367-7991
+
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

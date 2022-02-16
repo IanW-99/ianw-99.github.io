@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/e27129c6ef.js" crossorigin="anonymous"></script>
+    <style>
+        #background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            max-width: 100%;
+            z-index: -1;
+        }
+        #middleText {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            text-align: center;
+            font-family: Arial,serif;
+            font-size: 40px;
+            color: white;
+            z-index: 1;
+        }
+        #menus {
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            font-family: Arial, serif;
+            color: white;
+            font-size: 20px;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <video class="background" autoplay muted loop id="background">
+        <source src="media/background.mp4" type="video/mp4">
+    </video>
+
+    <div>
+        <p id="middleText"> Ian Washburn <br> Welcome to my Webpage!</p>
+
+    </div>
+    <div>
+        <p id="menus"> <i class="fas fa-smile"></i> About Me <br> <i class="fas fa-file-alt"></i> Resume <br>
+            <i class="fas fa-phone-square-alt"></i> Contact Info <br> <i class="fas fa-project-diagram"></i> Github
+        </p>
+    </div>
+
+</body>
+</html>
